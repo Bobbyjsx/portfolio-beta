@@ -41,6 +41,24 @@ header{
 
 
 }
+#ic > p{
+    position: absolute;
+   bottom: 0;
+   right: -30px;
+   position: fixed;
+}
+#ic {
+    position: absolute;
+   bottom: 0;
+   right: -30px;
+   position: fixed;
+}
+
+#ic > p{
+    position: relative;
+    left: 0;
+    right: 100%;
+}
 #navigators{
     display: flex;
     flex-direction: row;
@@ -74,6 +92,7 @@ a{
 
 }
 /* welcome*/
+
 .main{
     display: flex;
     flex-direction: column;
@@ -81,7 +100,23 @@ a{
     padding-top: 200px;
      gap: 30px;
      width: 100%;
+     z-index: 1;
+     background: url(./img/bg.jpg);
+     background-repeat: no-repeat;
+     background-position: 50%;
+     background-size: 100%;
+    background-position-x: right;
+    border-radius: 15%;
+    z-index: -2;
+     
    
+}
+
+#ph{
+    background:url();
+    width: 100%;
+    height: 100%;
+    
 }
 
 .main > h1{
@@ -199,15 +234,26 @@ margin: auto;
     border-radius: 5%;
     border-bottom: 1px solid #20c997;
 }
+.bi{
+    background: -webkit-linear-gradient(#00ff95,#09009f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    width: 20px;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+}
+
 #text{
    text-align: center;
     text-transform: uppercase;
     font-family:cursive ;
     font-style:normal;
     font-size: 25px;
-  background: -webkit-linear-gradient(#00ff95,#09009f);
+  /* background: -webkit-linear-gradient(#00ff95,#09009f);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 }
 #port{
     text-align: center;
@@ -215,13 +261,17 @@ margin: auto;
     font-family:cursive ;
     font-style:normal;
     font-size: 25px;
-  background: -webkit-linear-gradient(#00ff95,#09009f);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  margin-bottom: 40px;
+    margin-bottom: 40px;
 
 }
+#sub{
+    text-align: center;
+    font-style:normal;
+    margin-bottom: 90px;
+
+    font-size: 20px;
+}
+
 #portfolio > div > a{
     text-decoration: none;
 }
@@ -233,8 +283,48 @@ margin: auto;
 :hover#img-el > a > img >h3{
     color: #00ff95;
 }
+#contact{
+    text-align: center;
+    text-transform: uppercase;
+    font-family:cursive ;
+    font-style:normal;
+    font-size: 23px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 100px;
+}
+i{
+    width: 100%;
+    margin-right: 10px;
+}
+#contact > a{
+    background-color: rgb(8, 5, 37);
+    border: 1px solid silver;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px;
+    margin: auto;
+    font-weight: bold;
+    text-align: center;
+    font-family:cursive ;
+    font-style:normal;
+}
+#contact > #conxab > p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-style: normal;
+}
+footer{
+    position: relative;
+    bottom: 0px;
+    padding: 10px;
+    text-align: center;
+    border-top:1px dashed silver;
+    width: 100%;
+}
 
-@media  screen and (max-width:500px) {
+@media screen and (max-width: 600px) {
     body{
       display: flex;
       width: 90%;
@@ -247,7 +337,9 @@ margin: auto;
           padding-top: 200px;
            gap: 30px;
            width: 100%;
+           background: none;
+      }   
       
-      }
+     
   }
 
