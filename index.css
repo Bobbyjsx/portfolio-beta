@@ -257,15 +257,7 @@ margin: auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
 }
-#port{
-    text-align: center;
-    text-transform: uppercase;
-    font-family:cursive ;
-    font-style:normal;
-    font-size: 25px;
-    margin-bottom: 40px;
 
-}
 #sub{
     text-align: center;
     font-style:normal;
@@ -288,8 +280,6 @@ margin: auto;
 #contact{
     text-align: center;
     text-transform: uppercase;
-    font-family:cursive ;
-    font-style:normal;
     font-size: 23px;
     display: flex;
     flex-direction: column;
@@ -299,6 +289,12 @@ margin: auto;
 i{
     width: 100%;
     margin-right: 10px;
+}
+.space{
+    margin-bottom: 30px;
+}
+#about-me > h3{
+    text-transform: uppercase;
 }
 #contact > a{
     background-color: rgb(8, 5, 37);
@@ -353,8 +349,13 @@ footer{
         gap: 10px;
         border-bottom:1px solid rgb(17, 13, 54);
     }
-    :hover.navigators{
-       nav-down: auto;
+   
+    #port{
+        text-align: center;
+        text-transform: uppercase;
+        /* font-weight: bold; */
+        font-size: 25px;
+        margin-bottom: 40px;
     
     }
   }
@@ -365,6 +366,16 @@ footer{
         font-weight: bold;
     
     }
+    #port{
+        text-align: center;
+        text-transform: uppercase;
+        font-family:cursive ;
+        font-style:normal;
+        font-size: 25px;
+        margin-bottom: 40px;
+    
+    }
+   
     
   }
 
